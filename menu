@@ -1,0 +1,153 @@
+<style>
+  body {
+  font-family: 'roboto', sans-serif;
+  padding: 0 1em;
+}
+
+.menu {  color: #BB0A34;
+
+  list-style: none;
+  line-height: 42px;
+  margin: auto;
+  /*outline: 1px solid red;*/
+  padding-left: 0;
+  width: 15em;
+}
+
+.menu a {
+  background: url(icons.png) no-repeat left top;
+  color: #ddd;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding-left: 3em;
+  width: 100%;
+}
+
+.menu a:hover {
+  margin-left: 1em;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.menu li {
+  box-shadow: 3px 0 #ddd inset;
+  margin-bottom: 5px;
+  padding-left: .5em;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.menu li:hover { box-shadow: 15em 0 #BB0A34 inset; }
+
+.menu li:nth-child(2) a { background-position: 0 -42px; }
+
+.menu li:nth-child(3) a { background-position: 0 -84px; }
+
+nav {
+  padding-right: .25em;
+  position: absolute;
+  left: -18em;
+  top: 0;
+  padding-top: 5em;
+  box-sizing: border-box;
+  z-index: 20;
+  height: 100%;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+nav.active { left: 0; }
+
+#mobile-nav {
+  background: url(menu-icon.png);
+  cursor: pointer;
+  left: 2em;
+  height: 30px;
+  position: absolute;
+  top: 2em;
+  width: 30px;
+  z-index: 30;
+}
+
+article {
+  padding: .5em 0;
+  line-height: 1.5;
+}
+
+footer {
+  font-size: 0.8em;
+  margin-top: 2em;
+  border-top: 1px solid #21345F;
+  padding-top: 2em;
+}
+
+
+</style>
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery MenuResponsive Demo</title>
+    <meta charset="utf-8"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta name="vierport" content="width=device-width"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="icon" href="icon.png">
+  </head>
+  <body>
+    <div id="mobile-nav" style="background-color: #21345F;"></div>
+    <div style="text-align: right;">
+      <img src="itsLogoConfondo-scaled-1.jpg" width="25%" height="10%">
+    </div>
+    <nav style="background: #21345F;">
+      <ul class="menu" style="background: #21345F;">
+        <li><a class="bi bi-person">Usuarios</a></li>
+        <li><a class="bi bi-folder">Proyectos</a></li>
+        <div style="
+        position:absolute;
+        left:0px; 
+        right:0px; 
+        bottom:0px; 
+        height:50px; 
+        z-index:0;"><li><a class="bi bi-box-arrow-left">Exit</a></li></div>
+    </nav>
+    <article>
+      <div class="jquery-script-ads"><script type="text/javascript"></script>
+      <script type="text/javascript"
+        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+    </article>
+    <footer><a href="#" target="target" _blank="_blank" title="Jhon Jairo Cruz"></a></footer>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+      $('#mobile-nav').click(function(event) {
+        $('nav').toggleClass('active');
+      });
+    </script>
+
+    <h1>Texto prueba hola mundo</h1>
+
+  </body>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
